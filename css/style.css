@@ -79,34 +79,41 @@ html{
 /*FIN ESTILOS HEADER*/
 /*Main - Index*/
 
-.main--container{
-    grid-area: container;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    background: rgb(245,39,137);
-    background: linear-gradient(90deg, rgba(245,39,137,1) 0%, rgba(233,0,255,0.9428448623485779) 55%, rgba(233,0,255,1) 100%);
+#contenedor__principal{
+    background: rgb(61,20,76);
+    background: linear-gradient(90deg, rgba(61,20,76,1) 0%, rgba(253,29,29,1) 69%, rgba(250,235,44,1) 100%);
 }
 
-.main__img {
+#contenedor__principal img {
     height: 50vh;
-    /* height: 400px; */
-    width: 80vw;
+    width: 100%;
+}
+.card-body{
+    background-color: #B10BB5;
 }
 
-.main--container h1 {
+#contenedor__principal h3 {
     display: flex;
-    color: whitesmoke;
-    font-size: 4rem;
+    font-size: 3rem;
     justify-content: center;
     font-weight: bold;
-
+    color: aliceblue;
 }
 
-.main--container p {
-    color: whitesmoke;
+#contenedor__principal p {
+    display: flex;
+    justify-content: center;
     font-size: 2rem;
+    color: whitesmoke;
 }
+
+#contenedor__principal .contenedor__iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*Main - Index - Fin*/
 /*Main - nosotos - Inicio*/
 .nosotros--container{
@@ -116,11 +123,12 @@ html{
     align-items:center;
     background: url(../assets/img/fondo.jpg) repeat-x 0 0;
     background-color: #F52789;
+    background-size: 100% auto;
 }
 
 .nosotros--container img{
-    width: 60vw;
-    height: 450px;
+    height: 50vh;
+    width: 100%;
 }
 
 .nosotros--container h1{
@@ -139,6 +147,13 @@ html{
     font-weight: 900;
 }
 
+.nosotros--container h3{
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    font-weight: bold;
+    color: aliceblue;
+}
 
 /*Main - nosotros - fin*/
 /*Main - arcade - inicio*/
@@ -149,6 +164,7 @@ html{
     align-items:center;
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
     background-color: #F52789;
+    background-size: 100% auto;
 }
 
 .local--titulo h1{
@@ -187,9 +203,17 @@ html{
 }
 
 .local--galeria p{
-    color: #B10BB5;
+    color: whitesmoke;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.local--galeria h3{
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 /*Main - arcade - inicio*/
@@ -203,6 +227,7 @@ html{
     align-items:center;
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
     background-color: #F52789;
+    background-size: 100% auto;
 }
 
 .arcade--titulo h1{
@@ -232,20 +257,21 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: whitesmoke 0.2rem solid;
+    /* border: whitesmoke 0.2rem solid; */
     margin: 0.5rem;
 }
 
 .arcade--galeria img{
-    width: 30vw;
+    width: 100%;
     height: 300px;
 }
 
 .arcade--galeria p{
-    color: #B10BB5;
+    color:whitesmoke;
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 
 /*Main - locales - fin*/
 
@@ -258,21 +284,22 @@ html{
     background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
     background-color: #F52789;
     grid-area: container;
+    background-size: 100% auto;
 }
 
-.form--container__formulario {
+/* .form--container__formulario {
     display: flex;
     flex-direction:column;
-}
+} */
 
 .form--container__formulario form {
     border: whitesmoke 0.4rem solid;;
-    width: 50vw;
-    height: 80vh;
+    width: 70vw;
+    height: auto;
     display: flex;
     flex-direction:column;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
 }
 
 .form--container__formulario form h1{
@@ -289,10 +316,6 @@ html{
     font-weight: bold;
 }
 
-.form--container__formulario form button{
-    width: 40vw;
-    height: 100px;
-}
 
 /*Main - formulario - fin*/
 

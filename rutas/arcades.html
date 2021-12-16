@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Hoja de estilos-->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
     <title>Arcades</title>
 </head>
 <body class="grilla">
@@ -25,35 +40,52 @@
     <!--Fin Header-->
     <!--Main Arcade Inicio-->
     <main class="arcade--container">
-        <section class="arcade--titulo">
-            <h1>Arcades</h1>
-            <p>Los mejores retroarcades de todos los tiempos</p>
-        </section>
+        <div class="row">
+            <div class="col">
+                <section class="arcade--titulo">
+                    <h1>Arcades</h1>
+                    <p>Los mejores retroarcades de todos los tiempos</p>
+                </section>
+            </div>
+        </div>
 
+        
         <section class="arcade--galeria"">
             <div class="arcade--galeria__left">
-                <img src="../assets/img/arcade1.png" alt="Maquina Arcade">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Iste corrupti deleniti cum cupiditate iusto numquam dolor 
-                    expedita itaque vitae deserunt? Fugit quasi dicta tempora 
-                    repudiandae velit itaque tempore neque reiciendis?
-                </p>
+                <div class="card mb-3">
+                    <img src="../assets/img/arcade1.png" alt="Maquina Arcade">
+                    <div class="card-body">
+                        <h3 class="card-title">Los mejores arcades</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Iste corrupti deleniti cum cupiditate iusto numquam dolor 
+                            expedita itaque vitae deserunt? Fugit quasi dicta tempora 
+                            repudiandae velit itaque tempore neque reiciendis?</p>
+                    </div>
+                </div>
             </div>
             <div class="arcade--galeria__center">
-                <img src="../assets/img/arcade2.jpeg" alt="Maquina Arcade">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Iste corrupti deleniti cum cupiditate iusto numquam dolor 
-                    expedita itaque vitae deserunt? Fugit quasi dicta tempora 
-                    repudiandae velit itaque tempore neque reiciendis?
-                </p>
+                <div class="card mb-3">
+                    <img src="../assets/img/arcade2.jpeg" alt="Maquina Arcade">
+                    <div class="card-body">
+                        <h3 class="card-title">Los mejores arcades</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Iste corrupti deleniti cum cupiditate iusto numquam dolor 
+                            expedita itaque vitae deserunt? Fugit quasi dicta tempora 
+                            repudiandae velit itaque tempore neque reiciendis?</p>
+                    </div>
+                </div>
             </div>
             <div class="arcade--galeria__right">
-                <img src="../assets/img/arcade3.png" alt="Maquina Arcade">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Iste corrupti deleniti cum cupiditate iusto numquam dolor 
-                    expedita itaque vitae deserunt? Fugit quasi dicta tempora 
-                    repudiandae velit itaque tempore neque reiciendis?
-                </p>
+                <div class="card mb-3">
+                    <img src="../assets/img/arcade3.png" alt="Maquina Arcade">
+                    <div class="card-body">
+                        <h3 class="card-title">Los mejores arcades</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Iste corrupti deleniti cum cupiditate iusto numquam dolor 
+                            expedita itaque vitae deserunt? Fugit quasi dicta tempora 
+                            repudiandae velit itaque tempore neque reiciendis?</p>
+                    </div>
+                </div>
             </div>
         </section>
         
