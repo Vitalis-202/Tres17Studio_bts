@@ -23,95 +23,134 @@
     <title>Arcades</title>
 </head>
 <body class="grilla">
-    <!--Header-->
-    <header class="header--container">
-        <img src="../assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
-        <!--Navbar-->
-        <nav class="header__nav">
-            <ul class="header__lista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="arcades.html">Arcades</a></li>
-                <li><a href="locales.html">Locales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <!-- Header Bootstrap-->
+    <header class="header__principal container-fluid sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <img src="../assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" 
+            aria-controls="navbar" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                    <li class="nav-item active"><a href="../nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a href="./locales.html">Locales</a></li>
+                    <li class="nav-item"><a href="./arcades.html">Arcades</a></li>
+                    <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+                <form action="" class="form-inline my-2 my-lg-0">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-info btn-lg" type="submit">BUSCAR</button>
+                </form>
+            </div>
         </nav>
     </header>
-    <!--Fin Header-->
+    <!--Fin Header Bootstrap-->
     <!--Main Arcade Inicio-->
-    <main class="arcade--container">
-        <div class="row">
-            <div class="col">
-                <section class="arcade--titulo">
-                    <h1>Arcades</h1>
-                    <p>Los mejores retroarcades de todos los tiempos</p>
-                </section>
-            </div>
-        </div>
-
-        
-        <section class="arcade--galeria"">
-            <div class="arcade--galeria__left">
-                <div class="card mb-3">
-                    <img src="../assets/img/arcade1.png" alt="Maquina Arcade">
+    <!--Seccion secundaria-->
+    <div class="seccion--secundaria container-fluid">
+        <main class="row align-items-center">
+            <!--Card#1-->
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <img src="../assets/img/arcade1.jpg" alt="Maquina Arcade" class="card-img-top img-fluid">
                     <div class="card-body">
-                        <h3 class="card-title">Los mejores arcades</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Iste corrupti deleniti cum cupiditate iusto numquam dolor 
-                            expedita itaque vitae deserunt? Fugit quasi dicta tempora 
-                            repudiandae velit itaque tempore neque reiciendis?</p>
+                        <h3 class="card-title">Arcades 70's</h3>
+                        <p class="card-subtitle text-muted mb-2">Sección viejitos</p>
+                        <p class="card-text">Disfruta de los primeros arcades.</p>
                     </div>
                 </div>
             </div>
-            <div class="arcade--galeria__center">
-                <div class="card mb-3">
-                    <img src="../assets/img/arcade2.jpeg" alt="Maquina Arcade">
+            <!--Card#2-->
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <img src="../assets/img/arcade7.jpg" alt="Maquina Arcade" class="card-img-top img-fluid">
                     <div class="card-body">
-                        <h3 class="card-title">Los mejores arcades</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Iste corrupti deleniti cum cupiditate iusto numquam dolor 
-                            expedita itaque vitae deserunt? Fugit quasi dicta tempora 
-                            repudiandae velit itaque tempore neque reiciendis?</p>
+                        <h3 class="card-title">Arcades 80's</h3>
+                        <p class="card-subtitle text-muted mb-2">Sección nostalgia</p>
+                        <p class="card-text">Se encuentran los clásicos que marcaron a toda una generación.</p>
                     </div>
                 </div>
             </div>
-            <div class="arcade--galeria__right">
-                <div class="card mb-3">
-                    <img src="../assets/img/arcade3.png" alt="Maquina Arcade">
+            <!--Card#3-->
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <img src="../assets/img/arcade3.jpeg" alt="Maquina Arcade" class="card-img-top img-fluid">
                     <div class="card-body">
-                        <h3 class="card-title">Los mejores arcades</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Iste corrupti deleniti cum cupiditate iusto numquam dolor 
-                            expedita itaque vitae deserunt? Fugit quasi dicta tempora 
-                            repudiandae velit itaque tempore neque reiciendis?</p>
+                        <h3 class="card-title">Arcades 90's</h3>
+                        <p class="card-subtitle text-muted mb-2">Época de disparos y peleas</p>
+                        <p class="card-text">Más connotados de la historia.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        
-    </main>
+            <!--Card#4-->
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <img src="../assets/img/arcade4.jpg" alt="Maquina Arcade" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Arcades 2000</h3>
+                        <p class="card-subtitle text-muted mb-2">Resplandor</p>
+                        <p class="card-text">Conoce las últimas obras maestras.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Card#5-->
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <img src="../assets/img/arcade5.jpeg" alt="Maquina Arcade" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Beat em up</h3>
+                        <p class="card-subtitle text-muted mb-2">Los yo contra el barrio</p>
+                        <p class="card-text">Golpea a todo lo que se mueve.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Card#6-->
+            <div class="col-6 col-lg-4">
+                <div class="card">
+                    <img src="../assets/img/arcade6.png" alt="Maquina Arcade" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Fighting games</h3>
+                        <p class="card-subtitle text-muted mb-2">Los rompe amistades</p>
+                        <p class="card-text">Compite con tus amigos y ten cuidado de los ultracombos.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <!--Main Arcade Fin-->
-    <!-- Footer-->
-    <footer class="footer--container">
-        <ul>
-            <li>
-                <img src="../assets/icons/github.png" alt="Icono github">
-                <a href="https://github.com/Vitalis-202/Tres17Studio" target="_blank">Hecho por Vitalis-202</a>
-            </li>
-            <li>
-                <img src="../assets/icons/facebook.png" alt="Icono facebook">
-                <a href="facebook" target="_blank">/FacebookTres17Studio</a>
-            </li>
-            <li>
-                <img src="../assets/icons/twitter.png" alt="Icono Twitter">
-                <a href="twitter" target="_blank">@TwitterTres17Studio</a>
-            </li>
-            <li>
-                <img src="../assets/icons/instagram.png" alt="Icono Instagram">
-                <a href="instagram" target="_blank">@instagramTres17Studio</a>
-            </li>
+    <!-- Footer bootstrap-->
+    <footer class="footer--container container-fluid">
+        <ul class="list-unstyled"">
+            <div class="row justify-content-around">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/github.png" alt="Icono github">
+                        <a href="https://github.com/Vitalis-202/Tres17Studio" target="_blank">Hecho por Vitalis-202</a>
+                    </li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/facebook.png" alt="Icono facebook">
+                        <a href="facebook" target="_blank">/FacebookTres17Studio</a>
+                    </li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/twitter.png" alt="Icono Twitter">
+                        <a href="twitter" target="_blank">@TwitterTres17Studio</a>
+                    </li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/instagram.png" alt="Icono Instagram">
+                        <a href="instagram" target="_blank">@instagramTres17Studio</a>
+                    </li>
+                </div>
+            </div>
         </ul>
     </footer>
-    <!--Fin Footer-->
+    <!--Fin footer Bootstrap-->
 </body>
 </html>

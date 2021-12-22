@@ -27,75 +27,166 @@
     <title>Tres17Studio</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header--container">
-        <img src="./assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
-        <!--Navbar-->
-        <nav class="header__nav">
-            <ul class="header__lista">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./rutas/nosotros.html">Nosotros</a></li>
-                <li><a href="./rutas/locales.html">Locales</a></li>
-                <li><a href="./rutas/arcades.html">Arcades</a></li>
-                <li><a href="./rutas/contacto.html">Contacto</a></li>
-            </ul>
+    <!-- Header Bootstrap-->
+    <header class="header__principal container-fluid sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <img src="./assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" 
+            aria-controls="navbar" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                    <li class="nav-item active"><a href="./rutas/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a href="./rutas/locales.html">Locales</a></li>
+                    <li class="nav-item"><a href="./rutas/arcades.html">Arcades</a></li>
+                    <li class="nav-item"><a href="./rutas/contacto.html">Contacto</a></li>
+                </ul>
+                <form action="" class="form-inline my-2 my-lg-0">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-info btn-lg" type="submit">BUSCAR</button>
+                </form>
+            </div>
         </nav>
-
     </header>
-
+    <!--Fin Header Bootstrap-->
     <!--Main-->
-    <main class="container-fluid" id="contenedor__principal">
-        <!--Section imagen Inicial-->
+    <main class="main--principal container-fluid">
+        <!--Section Carousel-->
         <section class="row">
-            <div class="col">
-                <div class="card mb-3">
-                    <img class="card-img-top" src="./assets/img/welcome.jpg" alt="Bienvenido a studioTres17">
-                    <div class="card-body">
-                        <h3 class="card-title">Inicio</h3>
-                        <p class="card-text">Bienvenidos a Studio Tres17 - De vuelta a los 80s.</p>
+            <div class="col mt-2">
+                <div class="carousel slide" id="secondary-carousel" data-ride="carousel"> 
+                    <!--Imagenes,controles-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#secondary-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#secondary-carousel" data-slide-to="1"></li>
+                        <li data-target="#secondary-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption d-block">
+                                <h3>Conócenos</h3>
+                                <p>Contamos con una gran variedad de Arcades ochenteros!</p>
+                            </div>
+                            <img src="./assets/img/carousel1.jpg" alt="Foto carousel 1">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h3>Nostalgia pura</h3>
+                                <p>Revive esos gratos momentos disfrutando de tu Arcade favorito!</p>
+                            </div>
+                            <img src="./assets/img/carousel2.jpg" alt="Foto carousel 2">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-caption d-block">
+                                <h3>Desafíos</h3>
+                                <p>¿Puedes superar tu record anterior con una sola ficha?</p>
+                            </div>
+                            <img src="./assets/img/carousel3.jpeg" alt="Foto carousel 3">
+                        </div>
                     </div>
+                    <a href="#secondary-carousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a href="#secondary-carousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
                 </div>
             </div>
         </section>
-
-        <!--Section iframe-->
-            <section class="row">
-                <div class="col">
-                    <div class="contenedor__iframe">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sMLVzlRwvrM" title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                        </iframe>
+    </main>
+    <!--Seccion secundaria-->
+    <div class="seccion--secundaria container-fluid">
+        <section class="row align-items-center">
+            <article class="col-12 mb-2 col-md-8 mt-2">
+                <div class="card">
+					<img src="./assets/img/welcome.jpg" class="card-img-top img-fluid" alt="">
+					<div class="card-body">
+						<h3 class="card-title">El mejor lugar de arcades</h3>
+						<p class="card-text">Te sentirás en otra dimensión ... la de la nostalgía </p>
+					</div>
+				</div>
+            </article>
+            <aside class="col-12 col-md-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-success mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title">@ElAntroDelGeek</h3>
+                                <p class="card-text">"Un excelente lugar para jugar a las maquinitas de la infancia."</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        
-        <section class="container-fluid">
-            
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-success mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title">@GeekMedia</h3>
+                                <p class="card-text">"Es volver a disfrutar de las máquinas que se encontraban en el barriro."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-success mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title">@RetroArcade</h3>
+                                <p class="card-text">"Tan bueno como jugar en los 80s"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-success mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title">@RetroChingon</h3>
+                                <p class="card-text">"Excelente, solo gastar fichas"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </section>
-    </main>
+    </div>
 
-    <!-- Footer-->
-    <footer class="footer--container">
-            <ul>
-                <li>
-                    <img src="./assets/icons/github.png" alt="Icono github">
-                    <a href="https://github.com/Vitalis-202/Tres17Studio" target="_blank">Hecho por Vitalis-202</a>
-                </li>
-                <li>
-                    <img src="./assets/icons/facebook.png" alt="Icono facebook">
-                    <a href="facebook" target="_blank">/FacebookTres17Studio</a>
-                </li>
-                <li>
-                    <img src="./assets/icons/twitter.png" alt="Icono Twitter">
-                    <a href="twitter" target="_blank">@TwitterTres17Studio</a>
-                </li>
-                <li>
-                    <img src="./assets/icons/instagram.png" alt="Icono Instagram">
-                    <a href="instagram" target="_blank">@instagramTres17Studio</a>
-                </li>
+    <!-- Footer bootstrap-->
+        <footer class="footer--container container-fluid">
+            <ul class="list-unstyled"">
+                <div class="row justify-content-around">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <li>
+                            <img src="./assets/icons/github.png" alt="Icono github">
+                            <a href="https://github.com/Vitalis-202/Tres17Studio" target="_blank">Hecho por Vitalis-202</a>
+                        </li>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <li>
+                            <img src="./assets/icons/facebook.png" alt="Icono facebook">
+                            <a href="facebook" target="_blank">/FacebookTres17Studio</a>
+                        </li>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <li>
+                            <img src="./assets/icons/twitter.png" alt="Icono Twitter">
+                            <a href="twitter" target="_blank">@TwitterTres17Studio</a>
+                        </li>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <li>
+                            <img src="./assets/icons/instagram.png" alt="Icono Instagram">
+                            <a href="instagram" target="_blank">@instagramTres17Studio</a>
+                        </li>
+                    </div>
+                </div>
             </ul>
-    </footer>
+        </footer>
+        <!--Fin footer Bootstrap-->
     
 </body>
 </html>

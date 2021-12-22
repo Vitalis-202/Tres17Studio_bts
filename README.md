@@ -8,6 +8,7 @@ Tienda para amantes de los arcades.
 
 ## Recursos
 * [Paleta](https://www.color-hex.com/color-palette/74007) - Paleta de colores Retro Neon
+* [Paleta](https://www.color-hex.com/color-palette/74007) - Paleta de colores Retro Neon
 
 
 

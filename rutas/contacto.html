@@ -24,21 +24,30 @@
 </head>
 <body class="grilla">
 
-    <!--Header-->
-    <header class="header--container">
-        <img src="../assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
-        <!--Navbar-->
-        <nav class="header__nav">
-            <ul class="header__lista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="arcades.html">Arcades</a></li>
-                <li><a href="locales.html">Locales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+    <!-- Header Bootstrap-->
+    <header class="header__principal container-fluid sticky-top">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <img src="../assets/img/logo-tres17.png" alt="Logo de Tres17Studio" class="header__logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" 
+            aria-controls="navbar" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                    <li class="nav-item active"><a href=".nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a href="./locales.html">Locales</a></li>
+                    <li class="nav-item"><a href="./arcades.html">Arcades</a></li>
+                    <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+                <form action="" class="form-inline my-2 my-lg-0">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-info btn-lg" type="submit">BUSCAR</button>
+                </form>
+            </div>
         </nav>
     </header>
-    <!--Fin Header-->
+    <!--Fin Header Bootstrap-->
     <!-- Main Formulario-->
     <main class="form--container">
         <section class="form--container__formulario">
@@ -68,27 +77,37 @@
         </section>
     </main>
     <!-- Main Formulario- fin->     
-    <!-- Footer-->
-    <footer class="footer--container">
-            <ul>
-                <li>
-                    <img src="../assets/icons/github.png" alt="Icono github">
-                    <a href="https://github.com/Vitalis-202/Tres17Studio" target="_blank">Hecho por Vitalis-202</a>
-                </li>
-                <li>
-                    <img src="../assets/icons/facebook.png" alt="Icono facebook">
-                    <a href="facebook" target="_blank">/FacebookTres17Studio</a>
-                </li>
-                <li>
-                    <img src="../assets/icons/twitter.png" alt="Icono Twitter">
-                    <a href="twitter" target="_blank">@TwitterTres17Studio</a>
-                </li>
-                <li>
-                    <img src="../assets/icons/instagram.png" alt="Icono Instagram">
-                    <a href="instagram" target="_blank">@instagramTres17Studio</a>
-                </li>
-            </ul>
+    <!-- Footer bootstrap-->
+    <footer class="footer--container container-fluid">
+        <ul class="list-unstyled"">
+            <div class="row justify-content-around">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/github.png" alt="Icono github">
+                        <a href="https://github.com/Vitalis-202/Tres17Studio" target="_blank">Hecho por Vitalis-202</a>
+                    </li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/facebook.png" alt="Icono facebook">
+                        <a href="facebook" target="_blank">/FacebookTres17Studio</a>
+                    </li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/twitter.png" alt="Icono Twitter">
+                        <a href="twitter" target="_blank">@TwitterTres17Studio</a>
+                    </li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <li>
+                        <img src="../assets/icons/instagram.png" alt="Icono Instagram">
+                        <a href="instagram" target="_blank">@instagramTres17Studio</a>
+                    </li>
+                </div>
+            </div>
+        </ul>
     </footer>
-    <!--Fin Footer-->
+    <!--Fin footer Bootstrap-->
 </body>
 </html>
