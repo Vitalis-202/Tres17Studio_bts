@@ -26,7 +26,7 @@ html {
       margin-left: 1rem;
       animation: animacion 10s linear infinite; }
     .header__navbar a {
-      color: white;
+      color: whitesmoke;
       padding: 10px;
       font-size: 2rem; }
       .header__navbar a :hover {
@@ -89,7 +89,7 @@ html {
   color: aliceblue; }
 
 /*Main - nosotros - fin*/
-/*Main - arcade - inicio*/
+/*Main - locales - inicio*/
 .local--container {
   grid-area: container;
   display: flex;
@@ -143,7 +143,6 @@ html {
   color: aliceblue; }
 
 /*Main - arcade - inicio*/
-/*Main - locales - inicio*/
 .arcade--container {
   grid-area: container;
   display: flex;
@@ -189,7 +188,6 @@ html {
   font-size: 1.2rem;
   font-weight: bold; }
 
-/*Main - locales - fin*/
 /*Main - formulario - inicio*/
 .form--container {
   display: flex;
