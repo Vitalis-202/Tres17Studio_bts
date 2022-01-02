@@ -3,7 +3,7 @@ $font-general:Outfit,sans-serif;
 $color-primary:rgb(245,39,137);
 $color-secondary:rgb(48,34,195);
 $color-font-basic:whitesmoke;
-// $color-back:rgb(240, 172, 126);
+$color-back:#F52789;
 // $color-back-card:rgb(159, 253, 253);
 // $font-size-p:1.5rem;
 
@@ -19,7 +19,32 @@ body{
 html{
 	font-size: 62.5%;
 }
+/*Maps*/
+$colores:(
+    primary:$color-primary,
+    secundary:$color-secondary,
+    back:$color-back
+);
+@each $valor, $color in $colores {
+    .fondo--#{$valor}{
+        background-color: $color;
+    }
+}
+/*Extends*/
+.h1--molde{
+    display: flex;
+    color: whitesmoke;
+    font-size: 4rem;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
 
+}
+/*Mixin*/
+@mixin tamanios($width,$heigth){
+    height: $heigth;
+    width: $width;
+}
 /*INICIO ESTILOS HEADER*/
 .header{
     background: $color-primary;
@@ -32,8 +57,7 @@ html{
         width: 100%;
 
         &--logo {
-            height: 70px;
-            width: 70px;
+            @include tamanios(70px,70px);
             margin-left: 1rem;
             animation: animacion 10s linear infinite;
         }
@@ -193,12 +217,7 @@ html{
 }
 
 .arcade--titulo h1{
-    display: flex;
-    color: whitesmoke;
-    font-size: 4rem;
-    justify-content: center;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    @extend .h1--molde;
 
 }
 .arcade--titulo p{

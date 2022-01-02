@@ -11,6 +11,26 @@ body {
 html {
   font-size: 62.5%; }
 
+/*Maps*/
+.fondo--primary {
+  background-color: #f52789; }
+
+.fondo--secundary {
+  background-color: #3022c3; }
+
+.fondo--back {
+  background-color: #F52789; }
+
+/*Extends*/
+.h1--molde, .arcade--titulo h1 {
+  display: flex;
+  color: whitesmoke;
+  font-size: 4rem;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+/*Mixin*/
 /*INICIO ESTILOS HEADER*/
 .header {
   background: #f52789;
@@ -151,14 +171,6 @@ html {
   background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
   background-color: #F52789;
   background-size: 100% auto; }
-
-.arcade--titulo h1 {
-  display: flex;
-  color: whitesmoke;
-  font-size: 4rem;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 1rem; }
 
 .arcade--titulo p {
   color: whitesmoke;
