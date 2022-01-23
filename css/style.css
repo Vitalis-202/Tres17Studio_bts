@@ -73,96 +73,45 @@ html {
   background: linear-gradient(0deg, #3022c3 0%, #cc11c7 100%); }
 
 /*Main - Index - Fin*/
-/*Main - nosotos - Inicio*/
+/*Main - nosotros - Inicio*/
 .nosotros--container {
-  grid-area: container;
+  background-color: #F52789;
+  background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../assets/img/fondo.jpg) repeat-x 0 0;
-  background-color: #F52789;
-  background-size: 100% auto; }
-
-.nosotros--container img {
-  height: 50vh;
-  width: 100%; }
-
-.nosotros--container h1 {
-  display: flex;
-  color: whitesmoke;
-  font-size: 5rem;
-  justify-content: center;
-  font-weight: bold; }
-
-.nosotros--container p {
-  color: whitesmoke;
-  font-size: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  font-weight: 900; }
-
-.nosotros--container h3 {
-  display: flex;
-  font-size: 3rem;
-  justify-content: center;
-  font-weight: bold;
-  color: aliceblue; }
+  justify-content: center; }
+  .nosotros--container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0); }
+    .nosotros--container .card img {
+      height: 50vh; }
+    .nosotros--container .card p {
+      color: whitesmoke;
+      font-size: 2rem;
+      font-weight: 900; }
+  .nosotros--container h1 {
+    display: flex;
+    color: whitesmoke;
+    font-size: 5rem;
+    justify-content: center;
+    font-weight: bold; }
+  .nosotros--container h3 {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    font-weight: bold;
+    color: aliceblue; }
 
 /*Main - nosotros - fin*/
-/*Main - locales - inicio*/
-.local--container {
-  grid-area: container;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
-  background-color: #F52789;
-  background-size: 100% auto; }
-
-.local--titulo h1 {
-  display: flex;
-  color: whitesmoke;
-  font-size: 4rem;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 1rem; }
-
-.local--titulo p {
-  color: whitesmoke;
-  font-size: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem; }
-
-.local--galeria {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center; }
-
-.local--galeria div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: whitesmoke 0.2rem solid;
-  margin: 0.5rem; }
-
-.local--galeria img {
-  width: 30vw;
-  height: 300px; }
-
-.local--galeria p {
-  color: whitesmoke;
-  font-size: 1.2rem;
-  font-weight: bold; }
-
-.local--galeria h3 {
-  display: flex;
-  font-size: 1.8rem;
-  justify-content: center;
-  font-weight: bold;
-  color: aliceblue; }
-
-/*Main - arcade - inicio*/
+/*Main - arcade + locales - inicio*/
 .arcade--container {
   grid-area: container;
   display: flex;
@@ -200,47 +149,42 @@ html {
   font-size: 1.2rem;
   font-weight: bold; }
 
+/*Main - arcade + locales - fin*/
 /*Main - formulario - inicio*/
-.form--container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+.contacto--container {
   background-color: #F52789;
-  /* grid-area: container; */
-  background-size: 100% auto; }
-
-.form--container__formulario {
-  display: flex;
-  flex-direction: column; }
-
-.form--container__formulario form {
-  border: whitesmoke 0.4rem solid;
-  width: 70vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
-
-.form--container__formulario form h1 {
-  display: flex;
-  color: whitesmoke;
-  font-size: 4rem;
-  justify-content: center;
-  font-weight: bold;
-  margin-bottom: 1rem; }
-
-.form--container__formulario form label {
-  color: whitesmoke;
-  font-size: 2.5rem;
-  font-weight: bold; }
+  background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .contacto--container form {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around; }
+    .contacto--container form h1 {
+      display: flex;
+      color: whitesmoke;
+      font-size: 4rem;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 1rem; }
+    .contacto--container form label {
+      color: whitesmoke;
+      font-size: 2.5rem;
+      font-weight: bold; }
 
 /*Main - formulario - fin*/
 /*FOOTER - INICIO ESTILOS*/
 .footer--container {
   background: #3022c3;
   background: radial-gradient(circle, #3022c3 50%, #3d144c 85%); }
+  .footer--container p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif; }
   .footer--container ul {
     /* display: flex;
         flex-direction: row;
@@ -253,7 +197,7 @@ html {
         justify-content: space-around;
         align-items: center; */ }
     .footer--container li a {
-      color: white;
+      color: whitesmoke;
       font-size: 1.1rem;
       text-decoration: none;
       font-family: 'Josefin Sans', sans-serif;
