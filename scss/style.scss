@@ -111,50 +111,69 @@ $colores:(
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // height: 75vh;
     
     h1{
         display: flex;
         color: $color-font-basic;
-        font-size: 5rem;
+        font-size: 4rem;
         justify-content: center;
         font-weight: bold;
     }
     h3{
+        display: flex;
+        justify-content: center;
         color: $color-font-basic;
         font-size: 2rem;
         font-weight: 900;
     }
 
-    .card {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .card{
         background-color: $color-transparente;
         
-        img{
-            height: 50vh;
-            width: 100%;
-            // width: 50vw;
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
         }
-        &-body{
+        p{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            color:$color-font-basic;
+        }
+        .card-body{
+            background-color: $color-transparente;
             
-            p{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                width: 80%;
-                color: $color-font-basic;
-                font-size: 2rem;
-                font-weight: 900;
-            }
         }
     }
+
+    // .card {
+        
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background-color: $color-transparente;
+        
+    //     img{
+    //         height: 50vh;
+    //         width: 100%;
+    //         // width: 50vw;
+    //     }
+    //     &-body{
+            
+    //         p{
+    //             display: flex;
+    //             flex-direction: row;
+    //             justify-content: space-around;
+    //             width: 80%;
+    //             color: $color-font-basic;
+    //             font-size: 2rem;
+    //             font-weight: 900;
+    //         }
+    //     }
+    // }
 }
 
 /*Main - nosotros - fin*/
@@ -215,13 +234,14 @@ $colores:(
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
     
     form {
         display: flex;
         flex-direction: column;
         align-items: space-around;
+        justify-content: center;
 
-        
         h1{
             display: flex;
             color: whitesmoke;
@@ -240,6 +260,33 @@ $colores:(
     }
 
 }
+
+.secundario--container{
+    background-color: $color-back;
+    background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    
+    .card{
+        background-color: $color-transparente;
+        
+        h3{
+            font-size: 2rem;
+            color: $color-font-basic;
+        }
+        p{
+            font-size: 2rem;
+            color:$color-font-basic;
+        }
+        .card-body{
+            background-color: $color-transparente;
+            
+        }
+    }
+}
+
 /*Main - formulario - fin*/
 /*FOOTER - INICIO ESTILOS*/
 .footer--container{

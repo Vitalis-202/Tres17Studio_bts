@@ -80,38 +80,32 @@ html {
   background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  background-size: cover; }
   .nosotros--container h1 {
     display: flex;
     color: whitesmoke;
-    font-size: 5rem;
+    font-size: 4rem;
     justify-content: center;
     font-weight: bold; }
   .nosotros--container h3 {
+    display: flex;
+    justify-content: center;
     color: whitesmoke;
     font-size: 2rem;
     font-weight: 900; }
   .nosotros--container .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0); }
-    .nosotros--container .card img {
-      height: 50vh;
-      width: 100%; }
-    .nosotros--container .card-body p {
+    .nosotros--container .card h2 {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 80%;
-      color: whitesmoke;
+      justify-content: center;
+      font-size: 2rem; }
+    .nosotros--container .card p {
+      display: flex;
+      justify-content: center;
       font-size: 2rem;
-      font-weight: 900; }
+      color: whitesmoke; }
+    .nosotros--container .card .card-body {
+      background-color: rgba(0, 0, 0, 0); }
 
 /*Main - nosotros - fin*/
 /*Main - arcade + locales - inicio*/
@@ -159,11 +153,13 @@ html {
   background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  align-items: center; }
   .contacto--container form {
     display: flex;
     flex-direction: column;
-    align-items: space-around; }
+    align-items: space-around;
+    justify-content: center; }
     .contacto--container form h1 {
       display: flex;
       color: whitesmoke;
@@ -175,6 +171,24 @@ html {
       color: whitesmoke;
       font-size: 2.5rem;
       font-weight: bold; }
+
+.secundario--container {
+  background-color: #F52789;
+  background: url(../assets/img/fondo2.jpg) repeat-x 0 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; }
+  .secundario--container .card {
+    background-color: rgba(0, 0, 0, 0); }
+    .secundario--container .card h3 {
+      font-size: 2rem;
+      color: whitesmoke; }
+    .secundario--container .card p {
+      font-size: 2rem;
+      color: whitesmoke; }
+    .secundario--container .card .card-body {
+      background-color: rgba(0, 0, 0, 0); }
 
 /*Main - formulario - fin*/
 /*FOOTER - INICIO ESTILOS*/
